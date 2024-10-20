@@ -179,12 +179,12 @@ void __start(void)
    * end of all of the other read-only data (.text, .rodata) at _eronly.
    */
 
-  for (src = (const uint32_t *)_eronly,
-       dest = (uint32_t *)_sdata; dest < (uint32_t *)_edata;
-      )
-    {
-      *dest++ = *src++;
-    }
+  // for (src = (const uint32_t *)_eronly,
+  //      dest = (uint32_t *)_sdata; dest < (uint32_t *)_edata;
+  //     )
+  //   {
+  //     *dest++ = *src++;
+  //   }
 
   showprogress('C');
 
